@@ -29,6 +29,8 @@ conjunto = {"Jonathan","Eslava",True,1.65}
 #---------------------------------------------------------------------------
 #Creando un diccionario (dict)
 diccionario = {
+    # la estrucutra de un diccionario es: 
+    #'Clave' : "valor" y se separa con comas
     'nombre': "Jonathan",
     'edad' : 24,
     'happy' : False,
