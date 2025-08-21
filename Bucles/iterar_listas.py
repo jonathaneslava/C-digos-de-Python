@@ -32,6 +32,7 @@ for num in range (20):
 #Len nos ayuda a saber la cantidad de elementos de la lista entonces como solo recibe un solo valor range
 #Entonces comienza desde cero al tamaño de la lista
 #despues nos muestra los elementos de la lista tomando la variable anima para mostrar cada valor en cada iteracion
+#Range no funciona para iterar los conjuntos por lo que esto no es optimo
 for anima in range(len(animales)):
     print(animales[anima])
     
