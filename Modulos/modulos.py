@@ -8,6 +8,8 @@ import modulo_saludar as m_saludar #as nos sirve para colocar un nombre diferent
 #from modulo_saludar import saludar
 #Si igual deseamos renombrar el nombre de una funcion podemos usar as
 #from modulo_saludar import saludar as nuevo_nombre_saludo
+#Si queremos importar todo usando from, aunuque esto es una mala practica pero lo hacemos como 
+#from modulo_saludar import *
 saludo = m_saludar.saludar("Jonathan") #Para llamar al metodo colocamos el nombre del modulo.nombre de la funcion y finalmente el parametro
 saludo_banda = m_saludar.saludar_banda("Jonathan") #Para llamar al metodo colocamos el nombre del modulo.nombre de la funcion y finalmente el parametro
 print(saludo)
