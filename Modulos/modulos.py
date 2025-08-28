@@ -14,3 +14,10 @@ saludo = m_saludar.saludar("Jonathan") #Para llamar al metodo colocamos el nombr
 saludo_banda = m_saludar.saludar_banda("Jonathan") #Para llamar al metodo colocamos el nombre del modulo.nombre de la funcion y finalmente el parametro
 print(saludo)
 print(saludo_banda)
+
+#Si tenemos el archivo en otra carpeta entonces se llama de la siguiente manera
+#from Modulos.modulo_saludar import saludar,saludar_banda
+#saludo = saludar("Jonathan") #Para llamar al metodo colocamos el nombre del modulo.nombre de la funcion y finalmente el parametro
+#saludo_banda = saludar_banda("Jonathan") #Para llamar al metodo colocamos el nombre del modulo.nombre de la funcion y finalmente el parametro
+#print(saludo)
+#print(saludo_banda)
