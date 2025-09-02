@@ -1,5 +1,5 @@
 #Para leer un archivo en python se tiene que colocar el open y la ruta en la que esta el archivo
-#UTF-8 es para leer caracteres especiales y que no nos de algo extraño
+#UTF-8 es para leer caracteres especiales y abrir el archivo con una codificacion universal
 archivo_sin_leer = open("Archivos\\texto_de_prueba.txt",encoding="UTF-8")
 #Una vez que esta en una variable para leerlo es necesario colocar .read()
 
