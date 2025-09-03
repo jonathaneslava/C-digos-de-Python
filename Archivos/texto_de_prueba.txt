@@ -1,2 +1,4 @@
-Este es un archivo de texto.
-Es una prueba para leer archivos en python.
+Hola, que tal 
+Hello 
+Se acumulara nueva informacion 
+Nuevo salto de linea 
