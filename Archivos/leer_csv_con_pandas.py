@@ -10,3 +10,9 @@ print(df)
 #Si queremos que solo muestre la columna nombre
 nombres = df["name"]
 print(nombres)
+
+#Creamos una cadena para otro ejemplo
+cadena = "0123456789"
+#Si queremos ver todos los valores que contiene la cadena colocamos [:]
+print(cadena[:]) #[Este lado indica de donde iniciamos : Este lado indica el valor hasta donde queremos que termine]
+print(cadena[:3]) #Muestra desde 0 hasta la posicion 3
