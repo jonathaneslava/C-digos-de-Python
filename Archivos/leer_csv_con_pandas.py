@@ -83,5 +83,6 @@ edad_mayor_20 = df.loc[df["edad"]>20,:]
 print(edad_mayor_20)
 
 #Accediendo a filas que sean menor a 20
+#El primer parametro es seleccionar todas las filas que cumplan con la condicion y el segundo parametro es seleccionar todas las columnas
 edad_menor_20 = df.loc[df["edad"]<20,:]
 print(edad_menor_20)
