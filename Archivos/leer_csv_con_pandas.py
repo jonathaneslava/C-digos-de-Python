@@ -51,3 +51,7 @@ filas_totales = df.shape[0]
 columnas_totales = df.shape[1]
 print(filas_totales)
 print(columnas_totales)
+
+#Obteniendo data estadistica del dataframe, usamos df.describe()
+df_info = df.describe()
+print(df_info)
