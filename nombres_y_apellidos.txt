@@ -1,0 +1,16 @@
+Los archivos son: 
+nombre:Jonathan
+apellido:Eslava
+--------------------
+nombre:Adrian
+apellido:Arroyo
+--------------------
+nombre:Raul
+apellido:Martinez
+--------------------
+nombre:Samuel
+apellido:Hernandez
+--------------------
+nombre:Jose
+apellido:Rodriguez
+--------------------
