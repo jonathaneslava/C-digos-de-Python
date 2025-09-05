@@ -31,3 +31,23 @@ print(df_orden_descendente)
 #Si deseamos concatenar 2 dataframes
 df_concatenado = pd.concat([df,df2])
 print(df_concatenado)
+
+#Accediendo a las filas de arriba para abajo con head()
+#Si usamos head sin ningun parametro nos muestra todos los datos df.head()
+#Si colocamos un parametro nos mostrara los datos hasta esa posicion df.head(1) nos mostrara los datos de la posocion 0 y 1
+primeras_fila = df.head(1)
+print(primeras_fila)
+
+#Accediendo a las filas de abajo hacia arriba con tail()
+#Si usamos tail sin ningun parametro nos muestra todos los datos df.tail()
+#Si colocamos un parametro nos mostrara los datos hasta esa posicion df.tail(2) nos mostrara los datos hasta la posicion 2
+ultimas_filas = df.tail(2)
+print(ultimas_filas)
+
+#Accediendo a las filas y columnas con shape, nos muestra (cantidad de filas, cantidad de columnas)
+filas_columnas_totales = df.shape
+print(filas_columnas_totales)
+filas_totales = df.shape[0]
+columnas_totales = df.shape[1]
+print(filas_totales)
+print(columnas_totales)
