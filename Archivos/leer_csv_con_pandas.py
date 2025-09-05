@@ -55,3 +55,17 @@ print(columnas_totales)
 #Obteniendo data estadistica del dataframe, usamos df.describe()
 df_info = df.describe()
 print(df_info)
+
+#Accediendo a un elemento especifico del dataframe con loc
+#Busca el elemento con el indice que tiene cada fila y colocamos en que columna deseamos que busque el elemento
+#Accediendo a la edad en la fila 2 
+elemento_especifico_loc = df.loc[2,"edad"]
+print(elemento_especifico_loc)
+
+#Si usamos iloc busca el elemento con el indice que tiene cada fila y colocamos el indice de la columna que deseamos que busque
+elemento_especifico_iloc = df.iloc[2,2]
+print(elemento_especifico_iloc)
+
+#Accediendo a todas las filas de una columna
+apellidos = df.iloc[:,1]
+print(apellidos)
