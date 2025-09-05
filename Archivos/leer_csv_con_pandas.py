@@ -69,3 +69,19 @@ print(elemento_especifico_iloc)
 #Accediendo a todas las filas de una columna
 apellidos = df.iloc[:,1]
 print(apellidos)
+
+#Accediendo a la fila 3 con loc 
+fila_3_loc = df.loc[2,:]
+print(fila_3_loc)
+
+#Accediendo a la fila 3 con iloc, en este caso se coloca de la misma forma que con loc
+fila_3_iloc = df.loc[2,:]
+print(fila_3_iloc)
+
+#Accediendo a filas que sean mayor a 20
+edad_mayor_20 = df.loc[df["edad"]>20,:]
+print(edad_mayor_20)
+
+#Accediendo a filas que sean menor a 20
+edad_menor_20 = df.loc[df["edad"]<20,:]
+print(edad_menor_20)
