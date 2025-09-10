@@ -10,4 +10,8 @@ df = pd.read_csv("Archivos_problemas_graficos\\ingresos.csv")
 #Se coloca df ya que es el documento csv donde estan los datos
 sns.barplot(x="fuente",y="ingreso",data=df)
 
+#Obteniendo el total de ingresos 
+total_ingresos = df['ingreso'].sum() #Indica la columna de los datos que se van a sumar
+#Mostramos la suma total de ingresos en la consola
+print(f'La suma total de los ingresos es de: {total_ingresos}')
 plt.show() #Con esto mostramos el grafico
