@@ -10,8 +10,13 @@ def sumar_dos():
         try:
             resultado = int(num1) + int(num2)
             #break #Si se cumple entonces no se cicla y se termina el ciclo
-        except: #Nos muestra el mensaje en dado caso de que encuentre la excepcion
+        #Si queremos que nos muestre el tipo de excepcion colocamos
+        #except Exception as e y si queremos saber el nombre de la excepcion colocamos type(e).__init__ 
+        except Exception as e: #Nos muestra el mensaje en dado caso de que encuentre la excepcion
             print("Escribe un numero no un texto")
+            #Si queremos conocer el nombre de la excepcion colocamos
+            print(f'El nombre de la excepcion es {type(e).__init__}')
+            print(f'El error es {e}')
         else: #Se ejecuta si no se ejecuta el except 
             break 
         finally:
