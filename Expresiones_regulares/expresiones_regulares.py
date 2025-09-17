@@ -1,7 +1,7 @@
 import re #Modulo que utilizamos para manejar expresiones regulares
-texto = '''Esta es la linea 1 de texto
-Esta es la linea 2 de texto
-Esta es la linea 3 de texto
+texto = '''Esta es la linea 1 de texto.
+Esta es la linea 2 de texto.
+Esta es la linea 3 de texto.
 '''
 #Realizando busquedas simples
 resultado_con_search = re.search("Esta",texto)#Busca coincidencias (busca, en la cadena de texto)
@@ -47,8 +47,22 @@ resultado = re.findall(r"\S",texto)
 print("\S Busca TODO MENOS espacios en blanco -> espacios, tabs, saltos de linea")
 print(resultado)
 
-#. busca saltos de linea
-#r nos indica que vamos usar las expresiones regulares, "." busca saltos de linea
+#. busca TODO menos saltos de linea
+#r nos indica que vamos usar las expresiones regulares, "." busca TODO menos saltos de linea
 resultado = re.findall(r".",texto)
+print(". Busca Todo menos saltos de linea")
+print(resultado)
+
+#\n busca saltos de linea
+#r nos indica que vamos usar las expresiones regulares, "." busca saltos de linea
+resultado = re.findall(r"\n",texto)
 print(". Busca saltos de linea")
 print(resultado)
+
+#\. Cancela caracteres especiales, cancelando la funcion del punto y buscando puntos
+#r nos indica que vamos usar las expresiones regulares, "\." Cancela caracteres especiales, cancelando la funcion del punto y buscando puntos
+resultado = re.findall(r"\.",texto)
+print("\ Cancela caracteres especiales, cancelando la funcion del punto y buscando puntos")
+print(resultado)
+
+#Armando una cadena que busque un numero, seguido de un punto y un espacio en linea 
