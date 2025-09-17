@@ -1,7 +1,7 @@
 import re #Modulo que utilizamos para manejar expresiones regulares
-texto = '''Esta es la linea 1 de texto.
-Esta es la linea 2 de texto.
-Esta es la linea 3 de texto.
+texto = '''Esta es la linea 10 de texto
+Esta es la linea 2 de texto
+Esta es la linea 30 de texto.
 '''
 #Realizando busquedas simples
 resultado_con_search = re.search("Esta",texto)#Busca coincidencias (busca, en la cadena de texto)
@@ -65,4 +65,31 @@ resultado = re.findall(r"\.",texto)
 print("\ Cancela caracteres especiales, cancelando la funcion del punto y buscando puntos")
 print(resultado)
 
-#Armando una cadena que busque un numero, seguido de un punto y un espacio en linea 
+#Armando una cadena que busque un numero, seguido de un punto y un espacio
+resultado = re.findall(r"\d\.\s",texto)
+print("Armando una cadena que busque un numero, seguido de un punto y un espacio")
+print(resultado)
+
+#^ Busca el principio de una linea, podemos colocarle una palabra y comprobar que esta al principio de la linea
+#r nos indica que vamos usar las expresiones regulares, "^" Busca el principio de una linea, podemos colocarle una palabra y comprobar que esta al pricipio de la linea
+resultado = re.findall(r"^Esta",texto)
+print("^ Busca el principio de una lista, podemos colocarle una palabra y comprobar que esta al principio de la linea, si si esta coloca la palabra entre corchetes, si no no muestra nada")
+print(resultado)
+
+#^ Busca el principio de una linea, Si queremos buscar una palabra al incio de una linea pero en otra linea de la inicial usamos M
+#Agregamos flags=re.M, lo que indica que busca multilinea en el texto
+resultado = re.findall(r"^Esta",texto,flags=re.M)
+print("Agregamos flags=re.M, lo que indica que busca multilinea en el texto")
+print(resultado)
+
+#$ Busca el final de una linea, podemos colocarle una palabra y comprobar que esta al final de la linea
+#r nos indica que vamos usar las expresiones regulares, "$" Busca el final de una linea, podemos colocarle una palabra y comprobar que esta al final de la linea
+resultado = re.findall(r"texto$",texto,flags=re.M)
+print("$ Busca el final de una linea, podemos colocarle una palabra y comprobar que esta al final de la linea")
+print(resultado)
+
+#{n} busca n cantidad de veces el valor de la izquierda
+#Es decir si buscamos los numeros \d y colocamos \d{3}, quiere decir que buscara una cadena que cumpla con la condicion de los 3 numeros
+resultado = re.findall(r"\d{2}",texto)
+print("{n} busca n cantidad de veces el valor de la izquierda, en este caso buscara una cadena con dos numeros")
+print(resultado)
