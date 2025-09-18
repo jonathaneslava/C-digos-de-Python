@@ -93,3 +93,19 @@ print(resultado)
 resultado = re.findall(r"\d{2}",texto)
 print("{n} busca n cantidad de veces el valor de la izquierda, en este caso buscara una cadena con dos numeros")
 print(resultado)
+
+#Si buscamos los numeros \d, colocamos \d{2} y que busque un espacio, quiere decir que buscara una cadena que cumpla con la condicion de los 2 numeros y un espacio
+resultado = re.findall(r"\d{2}\s",texto)
+print("buscamos los numeros \d, colocamos \d{2} y que busque un espacio, quiere decir que buscara una cadena que cumpla con la condicion de los 2 numeros y un espacio")
+print(resultado)
+
+#{n,m} -> al menos n y como maximo m
+resultado = re.findall(r"\d{1,4}",texto)
+print("buscamos los numeros \d, minimo 1 numero maximo 4, {n,m} -> al menos n y como maximo m")
+print(resultado)
+
+# | -> Busca una cosa o la otra
+resultado = re.findall(r"\d{1,4}|linea",texto)
+print("| -> Busca una cosa o la otra, busca un numero de minimo una cifra a maximo 4 o la palabra linea")
+print(resultado)
+
